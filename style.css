@@ -1,0 +1,59 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,400&family=Roboto:ital,wght@0,100;0,300;1,500&display=swap');
+#body{
+
+    font-family: 'Montserrat', sans-serif;
+    background: #11998e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+}
+
+input{color: black; border: 2px fixed black;
+
+    background: white;
+position: fixed; top: 93.5%; width: 66%; height: 3%;
+}
+p{
+
+    color: black;
+    
+    background: linear-gradient(to right,teal);
+border-radius: 5px;
+text-shadow:  1px 1px black;
+width: 50%;
+display: block;
+max-height: 5000px;
+
+
+border-block-end: 1px solid black;
+position: relative;
+left: 50%;
+
+}
+
+p::before{
+    content: "Tu:" ;
+    color: black;
+    text-shadow: -1px 0px black;
+}
+button:hover{
+    color: white;
+}
+button{
+width: 14%;
+
+    position: fixed;
+    top: 94%;
+    left: 71%;
+    color:black;
+    background-color:transparent;
+    border: 2px solid;
+    
+}
+
+#msg{
+
+    font-family: 'Montserrat', sans-serif; 
+}

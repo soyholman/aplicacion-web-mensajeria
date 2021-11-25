@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensaje de Textos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    
+<form action="">
+    <input type="text" placeholder="Escribe algo" id="msg">
+</form>
+<br>
+<!-- la funcion send nos permitira tomar el texto del imput y crear nodos hijos -->
+<button onclick="send()">Enviar</button>
+
+</body>
+
+<script>
+    function send(){
+        // en la variable msg tomaremos el valor en este caso el texto del input
+var msg=document.getElementById("msg");
+
+var bmesg=msg.value;
+// validamos si el input no esta limpio
+if(bmesg!=""){
+// creamos una variable crear un parrafo el cual se imprimira en la parte superior con lo anterior 
+// escrito en el input
+var p= document.createElement("p");
+var body=document.getElementById("body");
+var united1=body.appendChild(p);
+// concatenamos el valor de nuestro texto en el parrafo
+var united2=p.innerHTML=bmesg;
+// limpiamos el imput
+msg.value="";
+
+msg.placeholder="Escribe algo"
+
+}
+else{
+    // de lo contario si el imput esta vacio siempre nos devolvera el texto del placeholder y el valor sera nulo
+    msg.value="";
+    msg.placeholder="Escribe algo aqui!"
+}
+
+    }
+</script>
+</html>
